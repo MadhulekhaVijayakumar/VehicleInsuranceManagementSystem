@@ -1,0 +1,93 @@
+/* Full page background with centered form card */
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .navbars {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Auth card style */
+  .auth-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    width: 150%;
+    animation: fadeIn 0.5s ease;
+    margin-left: 200%;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .auth-card h2 {
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 1rem;
+  }
+  
+  /* Input group with icon */
+  .input-group-text {
+    background-color: #e6f0ff;
+    border-right: none;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+  }
+  
+  /* Form links (register/login switch) */
+  .auth-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .auth-links a {
+    color: #004080;
+    text-decoration: none;
+  }
+  
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Step transition (register multi-step) */
+  .step-form {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .step-form.hidden {
+    opacity: 0;
+    transform: translateX(-10px);
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  /* Fade animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .login-register-wrapper{
+    padding-top: 3%;
+  }
+  
+  

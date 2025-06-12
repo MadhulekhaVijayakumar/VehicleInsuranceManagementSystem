@@ -1,0 +1,322 @@
+/* Add this to your CSS file */
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust gap as needed */
+    padding-bottom: 3%;
+    width: 99vw;
+  }
+  
+  .stat-card {
+    flex: 1;
+    min-width: 200px; /* Minimum width before wrapping */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure all cards stretch to same height */
+  }
+  
+  .stat-card-body {
+    flex-grow: 1; /* Makes the card body expand to fill available space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-content {
+    flex-grow: 1; /* Makes content area fill available space */
+  }
+  
+  /* Color variants - same as before */
+  .bg-primary-light { background-color: rgba(13, 110, 253, 0.1); }
+  .bg-warning-light { background-color: rgba(255, 193, 7, 0.1); }
+  .bg-danger-light { background-color: rgba(220, 53, 69, 0.1); }
+  .bg-success-light { background-color: rgba(25, 135, 84, 0.1); }
+  
+  .icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+  }
+  /* AdminProposals.css */
+
+/* Main Container */
+.admin-proposals-container {
+  max-width: 95%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  width: 99vw;
+  background-image: url("Home2.jpeg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+}
+
+/* Heading */
+.admin-proposals-heading {
+  color: #1a2a5a;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Table Styles */
+.proposals-table {
+  background-color: #fff;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  
+}
+
+.proposals-table thead {
+  background-color:#1a2a5a;
+  color: white;
+}
+
+.proposals-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.proposals-table td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  border-top: 1px solid #e0e0e0;
+}
+
+.proposals-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.proposals-table tbody tr:hover {
+  background-color: #f1f5ff;
+}
+
+/* Action Button */
+.view-details-btn {
+  background-color: #1a2a5a;
+  color: white;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+.view-details-btn:active {
+  transform: translateY(0);
+}
+
+/* No Data Message */
+.no-proposals-message {
+  text-align: center;
+  padding: 1.5rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Modal Styles */
+.proposal-modal .modal-header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.proposal-modal .modal-title {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.section-heading {
+  color: #0d6efd;
+  font-weight: 500;
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.detail-list li {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.detail-list strong {
+  display: inline-block;
+  min-width: 160px;
+  color: #495057;
+}
+
+/* Document Download Buttons */
+.document-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.document-label {
+  font-weight: 500;
+  min-width: 160px;
+  color: #495057;
+}
+
+.download-btn {
+  margin-left: 1rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .admin-proposals-container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  
+  .proposals-table {
+    font-size: 0.875rem;
+  }
+  
+  .proposals-table th,
+  .proposals-table td {
+    padding: 0.5rem;
+  }
+  
+  .detail-list strong {
+    min-width: 120px;
+  }
+}
+
+/*dropdown css */
+/* Proposal Dropdown Styles */
+.nav-item.dropdown .btn.nav-link {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  background-color: #fff;
+}
+
+.nav-item.dropdown .dropdown-item {
+  padding: 0.5rem 1.5rem;
+  color: #495057;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.nav-item.dropdown .dropdown-item:hover,
+.nav-item.dropdown .dropdown-item:focus {
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+
+.nav-item.dropdown .dropdown-item:active {
+  background-color: rgba(13, 110, 253, 0.2);
+}
+
+
+
+/* When dropdown is open */
+.nav-item.dropdown.show .btn.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+  .nav-item.dropdown .dropdown-menu {
+    box-shadow: none;
+    background-color: transparent;
+    padding-left: 1rem;
+  }
+  
+  .nav-item.dropdown .dropdown-item {
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-item.dropdown .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+
+/*Proposal verfiy */
+/* ProposalVerifyPage.css */
+.proposal-verify-container {
+  max-width: 600px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* CENTERING MAGIC */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.proposal-verify-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#1a2a5a;/* bootstrap primary blue */
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #1a2a5a;
+}
+
+/* src/components/GenerateQuote.css */
+.generate-quote-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.quote-result {
+  background-color: #e7f1ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+

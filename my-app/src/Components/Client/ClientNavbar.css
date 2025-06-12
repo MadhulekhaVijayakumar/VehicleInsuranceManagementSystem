@@ -1,0 +1,255 @@
+.navbar-custom {
+  background-color: #1a2a5a; /* Dark navy (matches InsureWise header) */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem; /* Added padding for better spacing */
+}
+
+/* Navbar links/buttons */
+.navbar-nav .nav-item button {
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-weight: 500; /* Slightly bolder text */
+}
+
+/* Hover effect (matches teal in "Proposal Submission" text) */
+.navbar-nav .nav-item button:hover {
+  color: #007a8a; /* Teal accent */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Active/focus state */
+.navbar-nav .nav-item button:focus,
+.navbar-nav .nav-item button.active {
+  color: #ffc107; /* Yellow for active items */
+}
+
+/* Navbar container alignment */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Consistent spacing between items */
+}
+
+/* Mobile menu toggler (better visibility) */
+.navbar-toggler-icon {
+  background-color: white; /* White icon for contrast */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #1a2a5a; /* Maintain color on mobile */
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+  .navbar-nav {
+    margin-top: 0;
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+/* Utility class for flex items (e.g., search/logout) */
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increased spacing */
+}
+
+/* Outline button (e.g., login/logout) */
+.btn-outline-light {
+  font-size: 16px;
+  border-color: white;
+  transition: all 0.3s;
+}
+.btn-outline-light:hover {
+  background-color: #007a8a; /* Teal on hover */
+  border-color: #007a8a;
+}
+
+/* Body padding to avoid navbar overlap */
+body {
+  padding-top: 60px;
+  background-color: #f8f9fa;
+   /* Light gray (matches form background) */
+}
+/* For the card */
+.profile-card {
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+}
+
+/* For input focus state */
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.1);
+  border-color: #86b7fe;
+}
+
+/* For disabled inputs */
+.form-control:disabled {
+  background-color: #f9f9f9;
+}
+.btn-profile {
+  background: transparent;
+  border: none;
+  color: white; /* Default color */
+  transition: all 0.3s ease;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.btn-profile:hover {
+  color: #007a8a; /* Teal on hover */
+  transform: scale(1.1);
+}
+
+.btn-profile:active {
+  color: #ffc107; /* Yellow when active */
+}
+.btn-logout-custom {
+  background: transparent;
+  border: 1px solid #ffffff; /* White border */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-logout-custom:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #007a8a; /* Teal border on hover */
+  color: #007a8a;
+  transform: translateY(-1px);
+}
+
+.btn-logout-custom:active {
+  background: rgba(0, 122, 138, 0.2); /* Teal tint */
+  border-color: #ffc107; /* Yellow on click */
+  color: #ffc107;
+}
+
+/* src/components/TrackStatus.css */
+.track-status-container {
+ 
+  padding-top:35px;
+  padding-bottom: 36%;
+  padding-left: 5%;
+  background-image: url("track.jpeg");
+  background-size: cover;
+  background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+.policy-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.policy-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.policy-card h4 {
+  margin-bottom: 10px;
+}
+
+.policy-card p {
+  margin: 5px 0;
+}
+
+.quote-container {
+  padding-top: 20px;
+  padding-bottom: 200px;
+  background-image: url("track.jpeg");
+  background-size: cover;
+  background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ width: 100vw;
+}
+
+.quote-title {
+  color: #1a2a5a;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quote-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quote-card .card-body {
+  padding: 20px;
+}
+
+.quote-card .card-title {
+  font-size: 18px;
+  color: #1a2a5a;
+  font-weight: 600;
+}
+
+.quote-card .card-text strong {
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #1a2a5a;
+  border-color: #1a2a5a;
+}
+
+.btn-primary:hover {
+  background-color: #16224d;
+  border-color: #16224d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #e2e6ea;
+}
+
+#Policy{
+  padding-bottom: 25%;
+  background-position: center;
+  background-image: url("Home2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+ 
+}
+/*submit claim */
+#submitclaim{
+  padding-bottom: 3%;
+ 
+
+}
+#myclaim{
+  padding-bottom: 20%;
+}
+
+
+
